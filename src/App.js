@@ -36,8 +36,21 @@ const App = () => {
         const vowels = ["a", "e", "i", "o", "u" ]
         if (vowels.includes(eachWord[0])){
           return (eachWord.concat("way"))
-      
-    }
+      }
+      const storyQu = eachWord.split("").filter(squeal => {
+        return (
+        squeal === "q" ||
+        squeal === "u"
+      )
+      })
+
+       let testVar1 = []
+      // if (storyQu[0, 1] === "q", "u" && eachWord[0] === "q"){
+      //   if (storyQu.indexOf("q", "u") === 0, 2){
+      //     return storyQu.shift(0,1).join(eachWord)
+      //   } 
+      // }
+// if (storyQu[0] === )
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
